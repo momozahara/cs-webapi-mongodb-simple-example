@@ -34,6 +34,8 @@ public class ChannelController : ControllerBase
     }
 }
 
+#if DEBUG
+
 [Route("Dbg/Channel")]
 public class ChannelDebugController : ControllerBase
 {
@@ -62,3 +64,5 @@ public class ChannelDebugController : ControllerBase
         return response;
     }
 }
+
+#endif
